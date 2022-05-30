@@ -2,10 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-/// A `ScrollPhysics` implementation which behaves like `BouncingScrollPhysics`,
+/// `ScrollPhysics` implementation which behaves like `BouncingScrollPhysics`,
 /// except doesn't let you to over-scroll on top.
-/// Same scroll behavior as [BouncingScrollPhysics], except doesn't let you
-/// to over-scroll on top side.
 ///
 /// If you want your scroll-view to be always scrollable,
 /// use [TopBlockedBouncingScrollPhysics] as a parent of
@@ -13,7 +11,9 @@ import 'package:flutter/material.dart';
 ///
 /// ```dart
 /// return ListView(
-///   physics: const AlwaysScrollableScrollPhysics(parent: TopBlockedBouncingScrollPhysics()),
+///   physics: const AlwaysScrollableScrollPhysics(
+///     parent: TopBlockedBouncingScrollPhysics(),
+///   ),
 /// );
 /// ```
 class TopBlockedBouncingScrollPhysics extends BouncingScrollPhysics {
