@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' show min;
 
 import 'package:flutter/material.dart';
 
