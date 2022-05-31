@@ -1,6 +1,6 @@
 name: flutter_top_blocked_bouncing_scroll_physics
 description: Flutter scroll-physics which behaves like `BouncingScrollPhysics`, except doesn't let you to over-scroll on top.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/qyre-ab/flutter_top_blocked_bouncing_scroll_physics
 
 environment:
