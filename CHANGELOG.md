@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* The initial version of `flutter_top_blocked_bouncing_scroll_physics` 🚀
