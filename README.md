@@ -3,12 +3,26 @@ except doesn't let you to over-scroll on top.
 
 ## Usage
 
+If you want over-scroll on bottom only when the content is longer than
+max scroll extent, use `TopBlockedBouncingScrollPhysics`:
+
 ```dart
-// TODO: Add example
+return ListView(
+  physics: const TopBlockedBouncingScrollPhysics(),
+);
 ```
 
-## Additional information
+If you always want over-scroll on the bottom, use `AlwaysScrollableScrollPhysics`
+with `TopBlockedBouncingScrollPhysics` as a parent:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+return ListView(
+  physics: const AlwaysScrollableScrollPhysics(
+    parent: TopBlockedBouncingScrollPhysics(),
+  ),
+);
+```
+
+## Demo
+
+![](https://github.com/qyre-ab/flutter_top_blocked_bouncing_scroll_physics/raw/main/media/preview.gif)
